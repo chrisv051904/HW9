@@ -9,15 +9,12 @@ def encode(s):
         t += str(x)
     return t
 
-def decode(s):
-    # Takes string s
-    t = ""
-    for i in range(0, len(s)):
-        x = int(s[i])
-        #using -3 = 7 mod 10
-        x = (x + 7) % 10
-        t += str(x)
-    return t
+def decode(encoded_password):
+    decoded_password = ""
+    for digit in encoded_password:
+        decoded_digit = str((int(digit) - 3) % 10)  # Shift each digit down by 3 numbers
+        decoded_password += decoded_digit
+    return decoded_password
 
 #Christian Villa
 def main():
