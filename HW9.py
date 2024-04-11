@@ -10,6 +10,7 @@ def encode(s):
     return t
 
 def decode(encoded_password):
+    #New
     decoded_password = ""
     for digit in encoded_password:
         decoded_digit = str((int(digit) - 3) % 10)  # Shift each digit down by 3 numbers
