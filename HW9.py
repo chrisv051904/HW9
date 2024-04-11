@@ -1,3 +1,4 @@
+#Christian Villa
 def encode(s):
     #Takes string s
     t = ""
