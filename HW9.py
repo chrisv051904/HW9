@@ -8,7 +8,9 @@ def encode(s):
         x = (x + 3) % 10
         t += str(x)
     return t
-
+    
+# Decoder fucntion
+# Juan Sanchez
 def decode(encoded_password):
     #New
     decoded_password = ""
